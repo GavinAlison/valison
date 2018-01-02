@@ -1,0 +1,26 @@
+object 所有类的超类
+	1.equals()
+	
+	
+	
+	
+equals
+	相等原则：
+	1.自反性, x!=null && x.equals(y)  , = true 
+	2.对称性, x.equals(y) , y.equals(x);
+	3.传递性, x.equals(y), y.equals(z); ---> x.equals(z);
+	4.一致性, x, y 对象没变，equals结果是一样的
+	5.对于任意非空引用,  x.equals(null) --> false;
+hascode
+	哈希码，散列码
+toString
+	用于返回对象值的字符串
+	Object.toString... getClass().getName()+"@"+Integet.toHexString(hashCode()) 
+	其他的类toString()...getClass.getName()+"[attr=attr1]";
+	java.util.arrays.toString....将数组元素转换成字符串，以逗号分隔
+	java.util.arrays.deeptoString....将二维数组元素转换成[[obj11,obj12],[obj21,obj22]]
+	
+
+
+
+ 

@@ -1,0 +1,36 @@
+map
+HashMap
+	存储结构：    key-value
+	存储结果形式： {key1=value1, key2=value2, key3=value3, ...}
+	
+	HashMap map = new HashMap();
+	存储
+	map.put("key1","value")
+	
+	取
+	map.get(key)--value
+	
+	
+	
+	
+	
+list > ArrayList<Object>
+	管理着由对象引用组成的一个内部数组。
+	存储结构：动态的数组，可变长度的数组
+	存储结果形式： [obj1, obj2, obj3, obj4, ....]
+	
+	或者 [ {key1=value1}, {key2=value2}, {key3=value3}, ...]
+
+	List list =new  ArrayList();
+	存: list.add(obj1);
+	取: list.get(index);
+	
+	
+ArrayList如何进行管理内部数据
+	add操作，首先确定添加操作之后数组的长度是否大于初始化数组的大小，默认是为10,
+		如果大于10，那么数据列表将会创建一个更大的数据，这个新数组的长度为原数组的长度的1.5倍+1，
+		然后将对象从较小数组拷贝到新数组中
+	
+		
+	
+	

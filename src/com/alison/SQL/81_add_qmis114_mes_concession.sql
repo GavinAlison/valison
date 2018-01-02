@@ -1,0 +1,56 @@
+
+drop table QMIS114_MES_CONCESSION cascade constraints;
+create table QMIS114_MES_CONCESSION (
+  ID                NUMBER not null,  /**pk**/ 
+  VERSION           NUMBER not null,
+  ORDERBY           VARCHAR2(1024),
+  REMARK            VARCHAR2(1024),
+  HISTORY           CLOB,
+  AUTHOR_ID         NUMBER,
+  AUTHOR_NAME       VARCHAR2(1024),
+  AUTHOR_TIME       DATE,
+  MODIFYER_ID       NUMBER,
+  MODIFYER_NAME     VARCHAR2(1024),
+  MODIFY_TIME       DATE,
+  DATA_SCOPE_ID     NUMBER default 0,
+  RECORD_STATUS     NUMBER default 0,
+  DISPLAY           NUMBER default 0,
+  EXTEND_1          VARCHAR2(1024),
+  EXTEND_2          VARCHAR2(1024),
+  SHEET_ACCESSORIES VARCHAR2(4000),
+  
+  --表个性化字段：MAIN_ 开始
+  REPAIRUID VARCHAR2(100),
+  UNIT VARCHAR2(100),
+  MODEL VARCHAR2(100),
+  PRODNO VARCHAR2(100),
+  BATCHNO VARCHAR2(100),
+  QUANTITY VARCHAR2(100),
+  PARTNO VARCHAR2(100),
+  PARTNAME VARCHAR2(200),
+  VER VARCHAR2(100),
+  AMOUNT VARCHAR2(100),
+  DISTRIBUTEUNIT VARCHAR2(100),
+  AUDITNO VARCHAR2(100),
+  SEND VARCHAR2(100),
+  ORDERNO VARCHAR2(100),
+  PARTSORT VARCHAR2(100),
+  CONTENT VARCHAR2(4000),
+  REASONNO VARCHAR2(100),
+  COUNT VARCHAR2(100),
+  CHECKER VARCHAR2(100),
+  CHECKDATE VARCHAR2(100),
+  constraint PK_QMIS114_MES_CONCESSION primary key (ID)
+);
+
+drop sequence SEQ_QMIS114_MES_CONCESSION;
+create sequence SEQ_QMIS114_MES_CONCESSION
+start with 1
+increment by 1
+nominvalue
+nomaxvalue
+nocache;
+
+/*更新当前库脚本编号*/
+ update ws_sys set par_value='81', common_modify_time=to_char(sysdate,'yyyy-MM-dd HH24:mi:ss')
+   where par_name='DB_VERSION';

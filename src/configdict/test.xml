@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alison  >
+	<disk name="c">
+		<capacity >20G</capacity>
+		<directories>100</directories>
+		<file>10000</file>
+	</disk>
+	<disk name="d">
+		<capacity >100G</capacity>
+		<directories>300</directories>
+		<file>333333</file>
+	</disk>
+</alison>

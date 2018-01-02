@@ -1,0 +1,54 @@
+java.net.URLConnection
+
+**对象方法
+URL对象.openConnection() 返回一个 java.net.URLConnection。
+
+>>
+如果你连接HTTP协议的URL, openConnection() 方法返回 HttpURLConnection 对象。
+如果你连接的URL为一个 JAR 文件, openConnection() 方法将返回 JarURLConnection 对象。
+等等...
+
+
+URLConnection 方法列表如下：
+1. Object getConnection()
+	检索URL链接内容
+2. Object getContent(Class[] classes)
+	检索URL链接内容
+3. String getContentEncoding()
+	返回头部content-encoding字段值
+4. int getContentLength();
+	返回头部content-length字段值
+5. String getContentType()
+	返回偷懒不content-type字段值
+6. int getLastModified()
+	返回头部last-modified字段值
+7. long getExpiration()
+	返回头部expires字段值
+8. long getIfModifiedSince()
+	返回对象ifModifiedSince字段值
+9. public void setDoInput(boolean input)
+	URL连接可用于输入和输出，如果打算使用URL连接进行输入，
+	则将DoInput标志设置为true,如果不打算使用，则设置为false,
+	默认值为false.
+10. public void setDoOutput(boolean output)
+	URL连接可用于输入和输出，如果打算使用URL连接进行输出，
+	则将DoOutput标志设置为true,如果不打算使用，则设置为false,
+	默认值为false.
+11. public InputStream getInputStream() throws IOException
+	返回URL的输入流，用于读取资源
+12. public OutputStream getOutputStream() throws IOException
+	返回URL的输出流，用于写入资源。
+13. public URL getURL()
+	返回URLConection对象连接的URL
+
+
+
+
+
+
+
+
+
+
+
+

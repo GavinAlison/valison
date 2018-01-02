@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+/* div id = holder */  
+#holder {
+　　border: 10px dashed #ccc;
+　　width: 300px;
+　　min-height: 300px;
+	margin: 20px auto;
+}
+#holder.hover {
+　　　border: 10px dashed #0c0;
+}

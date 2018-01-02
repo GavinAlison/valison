@@ -1,0 +1,2 @@
+/*删除不用的触发器*/
+DROP TRIGGER TIB_WS_MODULE_UG;

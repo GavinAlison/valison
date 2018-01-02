@@ -1,0 +1,8 @@
+-- add DATAITEM_NAME_ENG,DOMAIN_DESC_ENG ,REP_TABLE_NAME_ENG
+create or replace view v_all_pur_dataitem as
+select dv."ROWNUM",dv."DATAITEM_ID",dv."EXCEL_INPUT_WIDTH",dv."UNI_CODE",dv."DOMAIN_ID",dv."WS__DATAITEM_ID",dv."DATAITEM_IF_ID",dv."COMMON_ORDERBY",dv."COMMON_REMARK",dv."COMMON_AUTHOR_ID",dv."COMMON_AUTHOR_NAME",dv."COMMON_CREATE_TIME",dv."COMMON_MODIFYER_NAME",dv."COMMON_MODIFIER_ID",dv."COMMON_MODIFY_TIME",dv."COMMON_DISPLAY",dv."COMMON_EXTEND_1",dv."COMMON_EXTEND_2",dv."COMMON_DATA_SCOPE_ID",dv."COMMON_RECORD_STATUS",dv."COMMON_YEAR_ON",dv."COMMON_MONTH_ON",dv."DATAITEM_NAME",dv."DATAITEM_NAME_ENG",dv."DATAITEM_DEFAULT",dv."ONXXX",dv."ONBLUR",dv."ONCLICK",dv."ONFOCUS",dv."ONLOAD",dv."DATAITEM_REC",dv."DATAITEM_WARN",dv."DATAITEM_SQL",dv."DATAITEM_FUNCTION",dv."DATAITEM_FLAG",dv."ONKEYPRESS",dv."DATAITEM_ONSHOW",dv."DATAITEM_ONCHANGE",dv."DATAITEM_ONFOCUS",dv."DATAITEM_CODE",dv."ORG_CODE",dv."COMMON_MODIFY_ID",dv."ALT",dv."ONCHANGE",dv."CHILD_REPORT_LIST",dv."CHILD_URL",DV."SHARE_CHILD_PARAM",DV."READ_ONLY",dv."DOMAIN_DESC",dv."DOMAIN_DESC_ENG",dv."DOMAIN_WORK_ID",dv."DSL_ID",dv."STYLE_ID",dv."ENUM_ID",dv."TOP",dv."LEFT",dv."WIDTH",dv."HEIGHT",dv."SHOW",dv."DIVLINE",dv."DIS",dv."REP_TYPE_ID",dv."REP_TABLE_NAME",dv."REP_TABLE_NAME_ENG",dv."REP_TABLE_DESC",dv."REP_TABLE_STAT",dv."REP_TABLE_ID",dv."RTSL_ID",dv."DSLDESC",dv."TSLDESC",uv.user_id from(
+select v.*,ds.sl_desc as dsldesc,ts.sl_desc as tsldesc from v_all_dataitem v
+left join ws_sl ds on ds.sl_id=v.DSL_ID
+left join ws_sl ts on ts.sl_id = v.RTSL_ID
+) dv,(select * from ws_user u left join ws_sl s on u.sl_id=s.sl_id) uv
+where dv.tsldesc >= uv.sl_desc and dv.dsldesc>=uv.sl_desc;

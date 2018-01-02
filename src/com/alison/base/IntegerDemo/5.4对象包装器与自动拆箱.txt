@@ -1,0 +1,32 @@
+包装类  	since1.5
+	1. 所有的基本类型都有一个与之对应的包装类
+		int--Integer,  long--Long, float-- Float , double--Double , 
+		short---Short,  byte--Byte,  char--Character, boolean --Boolean
+		前6个类都派生与Number类
+	2. 对象包装器类是不可变的。一旦构造了包装器，就不允许改变包装在其中的值，
+		体现在于，参数传递时，setValue(Integer i),其中的i在方法体中不可以修改其值。
+	3. 对象包装类的修饰符为final，表示不可以定义它的子类。
+	
+	
+自动装箱:	
+	基本类型的值自动转换成包装类对象的过程，就叫自动装箱。
+	list.add(3);--->list.add(Integer.valueOf(3));
+自动拆箱：
+	包装类对象自动转换成基本类型的值的过程，叫自动拆箱。
+	list.get(3);---> list.get(3).intVlaue();
+	
+比较包装对象
+	Integer e1 = 100;
+	Integer e2 = 100;
+	if(e1 == e2)...这个值永远为false，因为e1,e2是包装类对象，在内存中的地址不一样。
+	比较其值的方法为equals
+
+自动装箱与自动拆箱的操作是有编译器完成，与虚拟机无关。
+	
+修改包装对象的值，可以使用基本类型对应的持有者(holder)类型
+	public static void triple(IntHolder el){
+		el.value = el.value+1;
+	}
+	
+	
+	

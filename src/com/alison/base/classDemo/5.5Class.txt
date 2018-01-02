@@ -1,0 +1,31 @@
+Class类	
+	在java程序运行时，系统会为每个对象自动维护一个相对应的类型信息，
+	这个信息与对象的类有关系。
+	一个Class实例就是  类型的对象
+	1.获取Class对象的方法，三种
+		1 obj.getClass()
+		2 Object.class
+		3 Class.forName("java.lang.String")//可能抛出 checked Exception
+	2. clazz.newInstance()，利用运行时类创建一个类对象
+		底层使用的是类的无参构造函数
+	
+	
+在运行时，动态的获取运行的的类，手动添加相应的类在JVM中.
+
+	
+捕获异常
+	异常处理机制，就是对异常的处理过程，异常处理的策略，异常处理器， 
+	1.try..catch...  2. throws
+
+异常有两种类型：未检查异常和已检查异常
+	throwable
+		--error
+			--OverOfStack
+		--exception
+			--runtimeException
+			--..
+		
+
+
+
+	

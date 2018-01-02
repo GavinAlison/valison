@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+    
+<sqlMapConfig namespace="com.ibatis.pojo">
+	<typeAlias alias="userObject" type="com.ibatis.pojo.User" />
+	<resultMap id="userListObject" class="userObject">
+		<result property="user_id"  column="USER_ID" />
+		<result property="user_name"  column="USER_NAME" />
+		<result property="sex"  column="SEX" />
+	</resultMap>
+	<select id="sel" resultClass="userObject">
+		select user_id , user_name, user_sex sex
+		from ws_user
+	</select>
+	
+</sqlMapConfig>

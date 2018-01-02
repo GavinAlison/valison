@@ -1,0 +1,10 @@
+﻿关闭455端口的操作
+
+1. 修复漏洞前请将资料备份，并进行充分测试。
+
+2. 关闭455端口，步骤如下：http://blog.csdn.net/dianxin113/article/details/71788106
+
+3. 补丁包地址：https://blogs.technet.microsoft.com/msrc/2017/04/14/protecting-customers-and-evaluating-risk/
+
+
+	 
