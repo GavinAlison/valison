@@ -14,7 +14,7 @@ import jdk.internal.jfr.events.FileWriteEvent;
 
 public class FileDemo {
 	final static String separator = "\r\n";
-	final static String path1 = "D:\\test\\writeFile";
+	final static String path1 = "E:\\v\\qwe\\2";
 	final static String path2 = "C:\\uninstall.log";
 	final static String path3 = "D:\\test\\writeFile\\wpms.txt";
 	final static String xpath1 = "E:\\a\\asd";
@@ -29,17 +29,17 @@ public class FileDemo {
 	final static String LOGPATH = "E:\\a\\13\\log.txt";
 
 	public static void main(String[] args) {
-		FileDemo f = new FileDemo();
+		// FileDemo f = new FileDemo();
 		// File flie = new File("E:\\a\\12\\Web*");
 		// System.out.println(flie.exists());
 		// File sourceFile = new File(sourcePath);
 		// File destFile = new File(destPath);
 		// System.out.println(sourceFile.isDirectory());
-		try {
-			copyDir2(FileDemo.SOURCEPATH, destPath);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		// try {
+		// copyDir2(FileDemo.SOURCEPATH, destPath);
+		// } catch (Exception e) {
+		// e.printStackTrace();
+		// }
 
 		// String fileStr = "E:\\a\\demo1\\1105.txt";
 		// String fileStr_1 = "E:\\a\\1105";
@@ -50,6 +50,10 @@ public class FileDemo {
 		// String fileStr5 = "E:\\a\\writefile.txt";
 		// f.showDir(new File("E:\\a"));
 
+		// 列举125-128所有的文件记录
+		
+		File f = new File(FileDemo.path1);
+		showDir(f);
 	}
 
 	/**
@@ -337,7 +341,7 @@ public class FileDemo {
 
 	// 利用递归列出全部文件
 	public static void showDir(File dir) {
-		System.out.println(dir);
+//		System.out.println(dir);
 		File[] files = dir.listFiles();
 		for (File file : files) {
 			if (file.isDirectory())
