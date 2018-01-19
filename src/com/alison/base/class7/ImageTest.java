@@ -9,6 +9,11 @@ import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
+/**
+ * 图片显示不出来
+ * @author hy
+ *
+ */
 public class ImageTest {
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
