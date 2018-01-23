@@ -1,4 +1,4 @@
-package com.alison.base.class7;
+package com.alison.base.class8;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;
@@ -30,7 +30,7 @@ public class ButtonFrame extends JFrame {
 		add(buttonPanel);
 
 		// create button actions
-		ColorAction yellowAction = new ColorAction(Color.yellow);
+		ColorAction yellowAction = new ColorAction(Color.YELLOW);
 		ColorAction blueAction = new ColorAction(Color.BLUE);
 		ColorAction redAction = new ColorAction(Color.RED);
 
@@ -43,15 +43,15 @@ public class ButtonFrame extends JFrame {
 
 	private class ColorAction implements ActionListener {
 
-		private Color baackggroundColor;
+		private Color backgroundColor;
 
 		private ColorAction(Color c) {
-			baackggroundColor = c;
+			backgroundColor = c;
 		}
 
 		@Override
-		public void actionPerformed(ActionEvent e) {
-			buttonPanel.setBackground(baackggroundColor);
+		public void actionPerformed(ActionEvent event) {
+			buttonPanel.setBackground(backgroundColor);
 		}
 	}
 
