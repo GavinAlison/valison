@@ -1,4 +1,4 @@
-package com.alison.base.class8;
+package com.alison.base.class8.button;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;

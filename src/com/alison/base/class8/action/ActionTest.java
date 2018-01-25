@@ -1,20 +1,17 @@
-package com.alison.base.class8;
+package com.alison.base.class8.action;
 
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-/**
- * @version 1.0
- * @author hy
- */
-public class ButtonTest {
+public class ActionTest {
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				JFrame frame = new ButtonFrame();
-				frame.setTitle("ButtonTest");
+				JFrame frame = new ActionFrame();
+				frame.setTitle("ActionTest");
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				frame.setVisible(true);
 			}
