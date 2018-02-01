@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Properties;
 
 import javax.swing.JFrame;
@@ -13,7 +15,11 @@ import javax.swing.JOptionPane;
 
 /**
  * 系统的键值对在security/java.policy文件中 <br>
- * java.vm.name
+ * java.vm.name<br>
+ * properties名为属性映射
+ * 
+ * 
+ * 
  * 
  * @author hy
  * 
@@ -39,7 +45,9 @@ class PropertiesFrame extends JFrame {
 
 	public PropertiesFrame() {
 		// get position, size, title from properties
+		// 获得系统默认的user.home的key的value
 		String userDir = System.getProperty("user.home");
+		// File(String parent, String child)
 		File propertiesDir = new File(userDir, ".");
 		if (!propertiesDir.exists()) {
 			propertiesDir.mkdir();
@@ -53,10 +61,13 @@ class PropertiesFrame extends JFrame {
 		defaultSettings.put("height", "" + DEFAULT_HEIGHT);
 		defaultSettings.put("title", "");
 
+		// Properties(Properties defaults)
 		settings = new Properties(defaultSettings);
 		if (propertiesDir.exists()) {
 			try {
 				FileInputStream in = new FileInputStream(propertiesFile);
+				// public synchronized void load(InputStream inStream)
+				// 　从输入流中加载一个属性映射
 				settings.load(in);
 			} catch (IOException e) {
 				e.printStackTrace();
@@ -90,6 +101,9 @@ class PropertiesFrame extends JFrame {
 				settings.put("title", getTitle());
 				try {
 					FileOutputStream out = new FileOutputStream(propertiesFile);
+
+					// public void store(OutputStream out, String comments)
+					// 将属性映射存放到一个输出流中
 					settings.store(out, "programe Properties");
 				} catch (Exception en) {
 					en.printStackTrace();
