@@ -19,7 +19,10 @@ package com.alison.base.javadoc;
  * 类注解放在import之后，Class之前
  * 
  * @author hy
+ * @see
+ * @deprecated
  */
+@Deprecated
 public class JavaDocDemo {
 
 	/**
@@ -35,7 +38,7 @@ public class JavaDocDemo {
 	 */
 	public String exchangeValue(Object dest, Object orgi, int flag)
 			throws Exception {
-		
+
 		return "";
 	}
 
