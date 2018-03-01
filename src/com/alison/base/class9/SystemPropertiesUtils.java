@@ -42,16 +42,18 @@ public class SystemPropertiesUtils {
 	public String getProperty(String key, String orgName) {
 		return getProperty(key, orgName, true);
 	}
-	
+
 	public String getProperty(String key, String orgName, boolean isHandle) {
 		if (StaticMethod.isEmpty(key)) {
-			LogUtil.debug(SystemPropertyTag.class, " key is null.");
+			// LogUtil.debug(SystemPropertyTag.class, " key is null.");
 			return "";
 		}
-		String value = getAppointProperty(key, orgName, isHandle);
-		LogUtil.debug(SystemPropertyTag.class, "appoint property value:["
-				+ value + "]");
-		return value == null ? StaticMethod.null2String(getDefaultProperty(key,
-				isHandle)) : value;
+		// String value = getAppointProperty(key, orgName, isHandle);
+		// LogUtil.debug(SystemPropertyTag.class, "appoint property value:["
+		// + value + "]");
+		// return value == null ?
+		// StaticMethod.null2String(getDefaultProperty(key,
+		// isHandle)) : value;
+		return "";
 	}
 }
