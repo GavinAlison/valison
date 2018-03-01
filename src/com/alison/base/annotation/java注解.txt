@@ -1,0 +1,14 @@
+框架开发之Java注解的妙用 [](https://www.jianshu.com/p/b560b30726d4)
+
+注解的好处:
+
+1. 简洁，代码更加清晰
+2. 可以替代配置文件
+3. 框架Spring和hibernate都利用了java的注解，
+
+注解
+
+注解是在java 1.5中提出的。
+
+分类
+
