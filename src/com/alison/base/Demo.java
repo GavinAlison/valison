@@ -7,6 +7,7 @@ public class Demo {
 	final int b = 2;
 	final String str = "asd";
 	final Employee e = new Employee();
+//	final volatile int i = 1;
 
 	public static void main(String[] args) {
 		// a = 2;// error, Cannot make a static reference to the non-static
@@ -15,6 +16,6 @@ public class Demo {
 		// field a
 		// e = new Employee();
 		// a = b;
-
+		
 	}
 }

@@ -1,6 +1,7 @@
 package com.alison.base.concurrent;
 
 public class Singleton {
+
 	private static class SingleHolder {
 		public static final Singleton instance = new Singleton();
 	}
