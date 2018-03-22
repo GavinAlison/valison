@@ -1,9 +1,9 @@
 package com.ibatis.pojo;
 
-import javassist.SerialVersionUID;
 
 public class User {
 
+	@SuppressWarnings("unused")
 	private static final Long SerialVersionUID = 1L;
 	private String user_id;
 	private String user_name;

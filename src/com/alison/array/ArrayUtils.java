@@ -3,6 +3,7 @@ package com.alison.array;
 import java.util.List;
 
 public class ArrayUtils {
+	@SuppressWarnings("unchecked")
 	public static void foreach(List list) {
 		for (Object obj : list) {
 			System.out.print(obj + "  ");
@@ -17,6 +18,7 @@ public class ArrayUtils {
 		System.out.println();
 	}
 
+	@SuppressWarnings("unchecked")
 	public static void foreachBase(List list) {
 		int[] _arr = (int[]) list.get(0);
 		foreach(_arr);

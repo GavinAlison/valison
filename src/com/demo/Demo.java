@@ -12,6 +12,7 @@ public class Demo {
 
 	void method02() {
 		String str1 = "05";
+		@SuppressWarnings("unused")
 		String str2 = "10";
 		System.out.println(Integer.valueOf(str1));
 		System.out.println(String.valueOf(Integer.valueOf(str1)));

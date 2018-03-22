@@ -69,13 +69,13 @@ public class ArrayUtil {
 
 	@Test
 	public void test02() {
-		List list = new ArrayList();
+		List<Integer> list = new ArrayList<Integer>();
 		list.add(1);
 		list.add(2);
 		list.add(3);
 		list.add(4);
 		list.add(5);
-		for (Object o : list) {
+		for (Integer o : list) {
 			System.out.print(o + "-");
 		}
 		System.out.println();
@@ -95,6 +95,7 @@ public class ArrayUtil {
 		ArrayUtils.foreach(arr3);
 	}
 
+	@SuppressWarnings("unchecked")
 	public static Object goodCopeOf(Object o, int length) {
 		Class cl = o.getClass();
 		if (!cl.isArray())

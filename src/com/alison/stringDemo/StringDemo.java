@@ -8,6 +8,7 @@ public class StringDemo {
 		StringBuffer sb = new StringBuffer();
 		StringBuffer sb1 = new StringBuffer(sb.append("a"));
 		StringBuffer sb2 = sb.append("b");
+		@SuppressWarnings("unused")
 		StringBuffer sb3 = sb.append("a");
 		System.out.println(sb1);
 		System.out.println(sb2);

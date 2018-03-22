@@ -34,9 +34,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang.time.DateUtils;
-import org.hibernate.SessionFactory;
 import org.hibernate.util.StringHelper;
-import org.springframework.orm.hibernate3.LocalSessionFactoryBean;
 
 public class StaticMethod extends Regex {
 
@@ -361,6 +359,7 @@ public class StaticMethod extends Regex {
 		return quarter.toString();
 	}
 
+	@SuppressWarnings("unchecked")
 	public static void populate(Object bean, String prefix, String suffix,
 			HttpServletRequest request) throws ServletException {
 		// Build a list of relevant request parameters from this request
@@ -702,6 +701,7 @@ public class StaticMethod extends Regex {
 	 * @param o
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static Map<String, Object> beanConvertMap(Object o) {
 		try {
 			Map<String, Object> beanMap = BeanUtils.describe(o);
@@ -939,6 +939,7 @@ public class StaticMethod extends Regex {
 	 * @param szInterface
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public static boolean hasInterface(Class c, String szInterface) {
 		Class[] faces = c.getInterfaces();
 		for (Class face : faces) {

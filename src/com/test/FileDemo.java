@@ -10,8 +10,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
 
-import jdk.internal.jfr.events.FileWriteEvent;
-
 public class FileDemo {
 	final static String separator = "\r\n";
 	final static String path1 = "E:\\v\\qwe\\2";
@@ -367,11 +365,13 @@ public class FileDemo {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	private static void copyFileUsingJava7Files(File source, File dest)
 			throws IOException {
 		Files.copy(source.toPath(), dest.toPath());
 	}
 
+	@SuppressWarnings("unused")
 	private static void copyFileUsingFileStreams(File source, File dest)
 			throws IOException {
 		InputStream input = null;
