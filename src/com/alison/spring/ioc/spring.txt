@@ -1,0 +1,36 @@
+1.定义bean
+1.1、同一个spring.xml中不可以定义两个id相同的bean
+1.2、ClassPathXmlApplicationContext中有一个可变长度的构造函数，
+用于加载多个.xml中的bean，如果bean中有id相同，那么id相同的bean，所获得对象也相同。
+
+2. bean的作用域
+2.1、bean中属性scope表示bean的作用域， 有prototype、request、session、singleton四种。
+	其中singleton是默认的，表示单例。
+	prototype表示每次创建都会产生一个bean实例。
+	request和session只在web项目中才会用，其作用域就和request和session一样。
+	
+2.2、lazy-init表示的是bean的生命周期，默认为false。
+	当 scope=singleton时，bean会在装在配置文件时实例化，
+	如果望bean希在产生时才实例化，可以把lazy-init设置为true。
+	当 scope=prototype时，在产生bean时才会实例化它。
+	补充一点，如果希望该配置文件中所有的bean都延迟初始化，则应该
+	设置lazy-init=true.
+
+3. 注入
+所谓注入即注入bean中的属性，Spring为用户提供了三种注入方式，
+	settter注入、
+	构造方法注入、
+	注解注入
+	
+	
+	实例化bean的加载顺序为static--> construct()-->init()--->destory()
+	触发destory()方法的调用可以使用((ClassPathXmlApplicationContext)ctx).close();
+	
+	
+	
+	
+	
+	
+	
+	
+

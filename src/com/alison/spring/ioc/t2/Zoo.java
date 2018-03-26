@@ -1,7 +1,5 @@
 package com.alison.spring.ioc.t2;
 
-import javax.annotation.Resource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -17,7 +15,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Zoo {
 	@Autowired
 	private Tiger tiger;
-	@Resource
+	@Autowired
 	private Monkey monkey;
 
 	@Override

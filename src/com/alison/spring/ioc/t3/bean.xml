@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+	<bean id="family" class="com.alison.spring.ioc.t3.Family">
+		<constructor-arg name="person" ref="person" />
+		<constructor-arg name="familyName" value="familyName" />
+	</bean>
+	<bean id="person" class="com.alison.spring.ioc.t3.Person">
+		<property name="personName" value="alison"></property>
+		<property name="personAge" value="26"></property>
+	</bean>
+	<bean id="collectionClass" class="com.alison.spring.ioc.t3.CollectionClass">
+		<property name="list">
+			<list>
+				<value>111</value>
+				<value>222</value>
+			</list>
+		</property>
+		<property name="map">
+			<map>
+				<entry key-ref="family">
+					<bean class="com.alison.spring.ioc.t3.Person">
+						<property name="personName" value="alisont3" />
+						<property name="personAge" value="25" />
+					</bean>
+				</entry>
+			</map>
+		</property>
+		<property name="arrInt">
+			<array>
+				<value>333</value>
+				<value>444</value>
+			</array>
+		</property>
+	</bean>
+
+	<!-- 在加载bean的时候，自动调用指定的方法, 这个方法必须是static，而且是存在的 -->
+	<bean id="singleHolder" class="com.alison.spring.ioc.t3.SingleHolder"
+		factory-method="getInstance">
+	</bean>
+
+	<!-- 实例化bean的时候， static,construct,init,destory,-->
+	<bean id="emptyClass" class="com.alison.spring.ioc.t3.EmptyClass"
+		init-method="init" destroy-method="destory"></bean>
+
+
+</beans>
