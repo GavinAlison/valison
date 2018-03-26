@@ -24,10 +24,11 @@ public class Zoo {
 	public String toString() {
 		return "Zoo [monkey=" + monkey + ", tiger=" + tiger + "]";
 	}
-	
+
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
 				"com/alison/spring/ioc/t2/spring_module.xml");
-		System.out.println(ctx);
+		Zoo zoo = (Zoo) ctx.getBean("zoo");
+		System.out.println(zoo.toString());
 	}
 }
