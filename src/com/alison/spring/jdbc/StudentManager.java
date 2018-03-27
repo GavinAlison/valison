@@ -3,6 +3,9 @@ package com.alison.spring.jdbc;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -52,7 +55,7 @@ public class StudentManager {
 	}
 
 	// 根据ID更新信息
-	public boolean updateStudetn(int id, Student student) {
+	public boolean updateStudent(int id, Student student) {
 		boolean flag = true;
 		try {
 			String sql = "update student set name=?, age=?, classRoom=? where id=?";
@@ -77,7 +80,7 @@ public class StudentManager {
 					new RowMapper<Student>() {
 						public Student mapRow(ResultSet rs, int arg1)
 								throws SQLException {
-							Student student = null;
+							Student student = new Student();
 							student.setId(rs.getInt(1));
 							student.setVersion(rs.getInt(2));
 							student.setName(rs.getString(3));
@@ -89,7 +92,28 @@ public class StudentManager {
 		}
 		// 根据Id查询学生信息抛异常, 不管什么原因, 认为查询不到该学生信息, 返回null
 		catch (DataAccessException e) {
+			return student;
 		}
-		return student;
 	}
+
+	// 查询所有的学生
+	public List<Student> getStudentMap() {
+		String sql = "select * from student";
+		List<Map<String, Object>> resultList = jdbcTemplate.queryForList(sql);
+		List<Student> studentList = null;
+		if (resultList != null && !resultList.isEmpty()) {
+			studentList = new ArrayList<Student>();
+			Map<String, Object> map = null;
+			for (int i = 0; i < resultList.size(); i++) {
+				map = resultList.get(i);
+				Student student = new Student();
+				student.setId((Integer) map.get("id"));
+				student.setVersion((Integer) map.get("version"));
+				// student.set
+				studentList.add(student);
+			}
+		}
+		return studentList;
+	}
+
 }
