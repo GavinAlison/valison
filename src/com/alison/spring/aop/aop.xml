@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.2.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+
+	<bean id="h1" class="com.alison.spring.aop.HelloWorldImpl" />
+	<bean id="h2" class="com.alison.spring.aop.HelloWorldImpl2" />
+	<bean id="poincut" class="com.alison.spring.aop.PoincutHandler" />
+
+	<aop:config>
+		<aop:aspect id="poincutHand" ref="poincut">
+			<aop:pointcut id="addAllMethod"
+				expression="execution(* com.alison.spring.aop.HelloWorld.*(..))" />
+			<aop:before method="method1" pointcut-ref="addAllMethod" />
+			<aop:after method="method2" pointcut-ref="addAllMethod" />
+		</aop:aspect>
+	</aop:config>
+
+
+</beans>

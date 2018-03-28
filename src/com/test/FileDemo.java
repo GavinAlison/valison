@@ -8,7 +8,6 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.nio.file.Files;
 
 public class FileDemo {
 	final static String separator = "\r\n";
@@ -49,7 +48,7 @@ public class FileDemo {
 		// f.showDir(new File("E:\\a"));
 
 		// 列举125-128所有的文件记录
-		
+
 		File f = new File(FileDemo.path1);
 		showDir(f);
 	}
@@ -339,7 +338,7 @@ public class FileDemo {
 
 	// 利用递归列出全部文件
 	public static void showDir(File dir) {
-//		System.out.println(dir);
+		// System.out.println(dir);
 		File[] files = dir.listFiles();
 		for (File file : files) {
 			if (file.isDirectory())
@@ -368,7 +367,7 @@ public class FileDemo {
 	@SuppressWarnings("unused")
 	private static void copyFileUsingJava7Files(File source, File dest)
 			throws IOException {
-		Files.copy(source.toPath(), dest.toPath());
+		// Files.copy(source.toPath(), dest.toPath());
 	}
 
 	@SuppressWarnings("unused")
