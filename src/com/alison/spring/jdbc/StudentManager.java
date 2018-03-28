@@ -109,11 +109,12 @@ public class StudentManager {
 				Student student = new Student();
 				student.setId((Integer) map.get("id"));
 				student.setVersion((Integer) map.get("version"));
-				// student.set
+				student.setName((String) map.get("name"));
+				student.setAge((Integer) map.get("age"));
+				student.setClassRoom((String) map.get("classRoom"));
 				studentList.add(student);
 			}
 		}
 		return studentList;
 	}
-
 }
