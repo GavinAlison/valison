@@ -42,4 +42,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-</projectDescription> 
+	<linkedResources>
+		<link>
+			<name>valison</name>
+			<type>2</type>
+			<location>D:/workspace/valison/src</location>
+		</link>
+	</linkedResources>
+</projectDescription>

@@ -11,14 +11,15 @@
 
 	<bean id="h1" class="com.alison.spring.aop.HelloWorldImpl" />
 	<bean id="h2" class="com.alison.spring.aop.HelloWorldImpl2" />
-	<bean id="poincut" class="com.alison.spring.aop.PoincutHandler" />
-
+	<!-- 切面类 -->
+	<bean id="poincut1" class="com.alison.spring.aop.PoincutHandler" />
+	<!-- aop配置 -->
 	<aop:config>
-		<aop:aspect id="poincutHand" ref="poincut">
+		<aop:aspect id="poincutHand" ref="poincut1">
 			<aop:pointcut id="addAllMethod"
 				expression="execution(* com.alison.spring.aop.HelloWorld.*(..))" />
-			<aop:before method="method1" pointcut-ref="addAllMethod" />
-			<aop:after method="method2" pointcut-ref="addAllMethod" />
+			<aop:before method="print" pointcut-ref="addAllMethod" />
+			<aop:after method="print" pointcut-ref="addAllMethod" />
 		</aop:aspect>
 	</aop:config>
 
