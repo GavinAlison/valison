@@ -99,9 +99,6 @@
 			<aop:after method="after" pointcut-ref="pt" />
 			<!-- 返回后通知 -->
 			<!-- 异常通知 -->
-		</aop:aspect>
-	</aop:config>
-
 	<!-- 配置切面	 -->
 	<!-- 进行aop相应的配置 -->
 	
