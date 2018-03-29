@@ -116,5 +116,11 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-dbcp-1.4-bin.zip"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-pool-1.6-bin.zip"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjtools.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.aspectj.matcher.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-theories-5.0-alpha-3.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
