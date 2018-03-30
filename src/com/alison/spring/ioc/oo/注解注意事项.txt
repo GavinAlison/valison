@@ -1,0 +1,9 @@
+1. @Component注解
+当用它注解一个类时，Component注解类自动转换成一个<bean id="首字母小写的类名" class="类全限定名"/>
+如果类为 大写呢， bean id=类名， 不变。
+比如  
+@Component
+CDPlay  
+
+----
+<bean id="CDPlay" class="CDPlay全限定名" />
