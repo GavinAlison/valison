@@ -81,7 +81,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/juel-api.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/juel-engine.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/juel-impl.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/livetribe-jsr223.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/log4j.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/logkit.jar"/>
@@ -113,14 +112,14 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xmlsec-1.4.4.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xmltooling-1.3.2-1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xml-resolver-1.2.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-dbcp-1.4-bin.zip"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-pool-1.6-bin.zip"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjweaver.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjrt.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjtools.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.aspectj.matcher.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-4.10.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-theories-5.0-alpha-3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-4.12.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
