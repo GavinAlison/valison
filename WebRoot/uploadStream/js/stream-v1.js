@@ -1879,4 +1879,3 @@
 	Provider = bStreaming ? StreamProvider : SWFProvider;
 	window.Stream = window.Uploader = Main; /** window.Uploader是SWF组件的关键字(保留) */
 })();
->>>>>>> 311684702c51bc2920713ba2a019bd0e26c3224b
