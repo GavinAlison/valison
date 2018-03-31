@@ -1,9 +1,12 @@
-﻿﻿<%@ page language="java" import="java.util.*,com.avicinfo.pms.common.config.ConstantPms" pageEncoding="UTF-8"%>
-<%@ include file="/page/common/taglibs.jsp"%>
+﻿﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%--<%@ include file="/page/common/taglibs.jsp"%>,com.avicinfo.pms.common.config.ConstantPms--%>
+<%--	request.setAttribute("LineStatus_Readonly", ConstantPms.LineStatus.Readonly);--%>
+<%--	request.setAttribute("LineStatus_Writable", ConstantPms.LineStatus.Writable);--%>
+<%--	request.setAttribute("LineStatus_Lock", ConstantPms.LineStatus.Lock);--%>
 <%
-	request.setAttribute("LineStatus_Readonly", ConstantPms.LineStatus.Readonly);
-	request.setAttribute("LineStatus_Writable", ConstantPms.LineStatus.Writable);
-	request.setAttribute("LineStatus_Lock", ConstantPms.LineStatus.Lock);
+	request.setAttribute("LineStatus_Readonly", "0");
+	request.setAttribute("LineStatus_Writable", "1");
+	request.setAttribute("LineStatus_Lock", "2");
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -12,7 +15,7 @@
 		<meta http-equiv="pragma" content="no-cache">
 		<meta http-equiv="cache-control" content="no-cache">
 		<meta http-equiv="expires" content="0">
-		<%@ include file="/page/common/scripts.jsp"%>
+<%--		<%@ include file="/page/common/scripts.jsp"%>--%>
 		<c:set var="orgcodedept"><avic:SystemProperty key="system.process.logic"/></c:set> 
 	</head>
 	

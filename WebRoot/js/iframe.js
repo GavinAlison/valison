@@ -81,5 +81,4 @@ if('draggable' in document.createElement('span')){
 　　		var files = event.dataTransfer.files;
 　　		//do something with files
 　	};
->>>>>>> 311684702c51bc2920713ba2a019bd0e26c3224b
 } 
