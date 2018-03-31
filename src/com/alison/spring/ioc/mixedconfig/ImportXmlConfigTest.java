@@ -1,0 +1,21 @@
+package com.alison.spring.ioc.mixedconfig;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = SoundSystemConfig.class)
+public class ImportXmlConfigTest {
+
+	@Autowired
+	// 指定了mediaplaer中的属性值，没有产生歧义
+	private MediaPlayer player;
+
+	@Test
+	public void play() {
+		player.play();
+	}
+}

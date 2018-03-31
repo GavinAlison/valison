@@ -1,4 +1,4 @@
-package com.alison.spring.ioc.oo;
+package com.alison.spring.ioc.autoconfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

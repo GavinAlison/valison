@@ -1,4 +1,4 @@
-package com.alison.spring.ioc.oo;
+package com.alison.spring.ioc.autoconfig;
 
 import org.springframework.stereotype.Component;
 

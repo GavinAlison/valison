@@ -1,4 +1,4 @@
-package com.alison.spring.ioc.oo;
+package com.alison.spring.ioc.autoconfig;
 
 public interface MediaPlayer {
 

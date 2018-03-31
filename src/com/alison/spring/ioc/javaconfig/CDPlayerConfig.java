@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class CDPlayerConfig {
 
+	// 告诉spring会返回一个对象，该对象要注册为Spring应用上下文的bean
 	@Bean
 	public CompactDisc compactDisc() {
 		return new SgtPeppers();
