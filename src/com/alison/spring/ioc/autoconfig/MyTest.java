@@ -1,4 +1,4 @@
-package com.alison.spring.ioc.oo;
+package com.alison.spring.ioc.autoconfig;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MyTest {
 	@Test
 	public void test01() {
-		String resource = "com/alison/spring/ioc/oo/config/spring-module.xml";
+		String resource = "com/alison/spring/ioc/autoconfig/config/spring-module.xml";
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(resource);
 		CDPlayer cd = (CDPlayer) ctx.getBean("CDPlayer");
 		cd.method();

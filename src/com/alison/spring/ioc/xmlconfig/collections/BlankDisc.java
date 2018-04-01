@@ -2,7 +2,7 @@ package com.alison.spring.ioc.xmlconfig.collections;
 
 import java.util.List;
 
-import com.alison.spring.ioc.javaconfig.CompactDisc;
+import com.alison.spring.ioc.xmlconfig.CompactDisc;
 
 public class BlankDisc implements CompactDisc {
 

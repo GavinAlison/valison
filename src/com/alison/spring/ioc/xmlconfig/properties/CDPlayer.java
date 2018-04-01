@@ -2,8 +2,8 @@ package com.alison.spring.ioc.xmlconfig.properties;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.alison.spring.ioc.javaconfig.CompactDisc;
-import com.alison.spring.ioc.javaconfig.MediaPlayer;
+import com.alison.spring.ioc.xmlconfig.CompactDisc;
+import com.alison.spring.ioc.xmlconfig.MediaPlayer;
 
 public class CDPlayer implements MediaPlayer {
 	private CompactDisc compactDisc;

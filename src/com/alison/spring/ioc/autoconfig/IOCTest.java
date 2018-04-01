@@ -1,7 +1,8 @@
-package com.alison.spring.ioc.oo;
+package com.alison.spring.ioc.autoconfig;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.alison.spring.base.BaseJunitTest;
 
@@ -24,12 +25,14 @@ import com.alison.spring.base.BaseJunitTest;
 //   AbstractTransactionalDataSourceSpringContextTests要想构建这一系列的无污染纯绿色事务
 //   测试框架就必须找到这个基类！（即所有事务均不生效）
 //
+@Component
 public class IOCTest extends BaseJunitTest {
 	@Autowired
-	private CDPlayer cdPlayer;
+	private CDPlayer cd;
 
+	// 注入失败， 原因是没有找到对应的配置文件， 注意claspath*:**.xml 字符的格式
 	@Test
 	public void test() {
-		cdPlayer.method();
+		cd.method();
 	}
 }

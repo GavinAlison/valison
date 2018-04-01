@@ -3,9 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean class="com.alison.spring.ioc.stereoMixedconfig.CDConfig" />
+	<bean class="com.alison.spring.ioc.mixedconfig.CDConfig" />
 
-	<bean id="cdPlayer" class="com.alison.spring.ioc.stereoMixedconfig.CDPlayer"
+	<bean id="cdPlayer" class="com.alison.spring.ioc.mixedconfig.CDPlayer"
 		c:cd-ref="compactDisc" />
 
 </beans>
