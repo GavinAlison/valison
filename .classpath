@@ -13,7 +13,7 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/poi-3.14-20160307.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-aop-4.3.2.RELEASE.jar" sourcepath="E:/tools/spring-framework-4.3.2.RELEASE-dist/spring-framework-4.3.2.RELEASE/libs"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-aspects-4.3.2.RELEASE.jar" sourcepath="E:/tools/spring-framework-4.3.2.RELEASE-dist/spring-framework-4.3.2.RELEASE/libs"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-beans-4.3.2.RELEASE.jar" sourcepath="E:/tools/spring-framework-4.3.2.RELEASE-dist/spring-framework-4.3.2.RELEASE/libs/spring-beans-4.3.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-beans-4.3.2.RELEASE.jar" sourcepath="E:/tools/spring-framework-4.3.2.RELEASE-dist/spring-framework-4.3.2.RELEASE/libs"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-context-4.3.2.RELEASE.jar" sourcepath="E:/tools/spring-framework-4.3.2.RELEASE-dist/spring-framework-4.3.2.RELEASE/libs"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-context-support-4.3.2.RELEASE.jar" sourcepath="E:/tools/spring-framework-4.3.2.RELEASE-dist/spring-framework-4.3.2.RELEASE/libs"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring-core-4.3.2.RELEASE.jar" sourcepath="E:/tools/spring-framework-4.3.2.RELEASE-dist/spring-framework-4.3.2.RELEASE/libs/spring-context-support-4.3.2.RELEASE-sources.jar"/>
@@ -117,9 +117,8 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjweaver.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjrt.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjtools.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.aspectj.matcher.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-theories-5.0-alpha-3.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-4.12.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-theories-5.0-alpha-3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.aspectj.matcher.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

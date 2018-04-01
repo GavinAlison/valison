@@ -26,6 +26,15 @@
 实例化bean的加载顺序为static--> construct()-->init()--->destory()
 触发destory()方法的调用可以使用((ClassPathXmlApplicationContext)ctx).close();
 scope="prototype"是不会触发destory()的，没有为什么，设计就是这样
+
+
+4.  处理自动装配的歧义性
+ 方法:	1. 将可选的bean中某一个设为首选(primary)的bean
+	  	2. 使用限定符(qualifier)
+	  	
+	  	
+	  	
+ 
 	
 	
 	
