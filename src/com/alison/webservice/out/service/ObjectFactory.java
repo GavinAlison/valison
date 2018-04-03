@@ -1,5 +1,4 @@
-
-package com.alison.webservice.out.service.po;
+package com.alison.webservice.out.service;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;

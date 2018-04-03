@@ -1,5 +1,4 @@
-
-package com.alison.webservice.out.service.impl;
+package com.alison.webservice.out.service;
 
 import java.net.MalformedURLException;
 import java.net.URL;
