@@ -1,7 +1,5 @@
 package com.alison.webservice.client;
 
-import java.io.IOException;
-
 import javax.xml.namespace.QName;
 
 import org.apache.axiom.om.OMAbstractFactory;
@@ -14,20 +12,24 @@ import org.apache.axis2.client.Options;
 import org.apache.axis2.client.ServiceClient;
 import org.apache.axis2.rpc.client.RPCServiceClient;
 
+import com.alison.base.annotation.Description;
+
 /**
  * 
  * Title: AxisClientHello Description: webService 客户端调用 Version:1.0.0
  * 
  * @author panchengming
  */
+@Description(desc="无效的测试类")
 public class AxisClientHello {
-	private final static String url = "http://localhost:8080/axis2/services/AxisServiceHello?wsdl"; // wsdl地址
+	private final static String url = "http://localhost:8080/Service/JwsServiceHello?wsdl"; // wsdl地址
 	private final static String data = "PanChengMing"; // 参数
-	private final static String tns = "http://service.pcm.com"; // 命名空间
+	private final static String tns = "http://impl.service.webservice.alison.com/"; // 命名空间
 	private final static String method = "getValue"; // 调用的方法
 
-	// 调用webservice
-	public static void main(String[] args) throws IOException {
+	// 调用webservice ，  报错， 提示 java.lang.NoClassDefFoundError: org/apache/woden/WSDLException
+	// 不知道如何解决，网上说没有wsdl4j.jar， 但是已经添加了，还是报错！！无解
+	public static void main(String[] args) throws Exception {
 		getRPC(); // 调用方法一
 		// getDocument(); // 调用方法二
 	}
@@ -50,7 +52,7 @@ public class AxisClientHello {
 	 * 
 	 */
 	@SuppressWarnings("rawtypes")
-	public static void getRPC() throws AxisFault {
+	public static void getRPC() throws Exception {
 		RPCServiceClient serviceClient = new RPCServiceClient();
 		Options options = serviceClient.getOptions();
 		// 指定调用WebService的URL
@@ -71,7 +73,7 @@ public class AxisClientHello {
 	/**
 	 * 方法二： 应用document方式调用 用ducument方式应用现对繁琐而灵活。现在用的比较多。因为真正摆脱了我们不想要的耦合
 	 */
-	public static void getDocument() throws AxisFault {
+	public static void getDocument() throws Exception {
 		OMElement result = null;
 		try {
 			Options options = new Options();

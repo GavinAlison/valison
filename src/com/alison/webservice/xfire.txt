@@ -1,0 +1,47 @@
+xfire在spring 的集成：
+1. 引入XFire预配置信息， 在web.xml中通过servlet引入
+2. 使用XFire导出器
+3. 
+	引用xfire.xml中定义工厂
+ 	引用xfire.xml中定义的xfire实例
+ 	业务服务Bean，定义窄接口， 和实现窄接口的类。
+ 		通过name属性显式指定Web Service的名称
+ 	
+ 	-----------------------
+ 	<bean id="PmsUserManager205" parent="baseWebService">
+		<!-- 业务服务bean -->
+		<property name="serviceBean" ref="PmsUserManageBean205" />
+		<property name="name"  value="PmsUserManager205"/>
+		<!-- 业务服务bean的窄接口类 -->
+		<property name="serviceClass"
+			value="com.avicinfo.pms.integrate.userManager.service.bo.PmsUserManager205" />
+	</bean>
+	------------------------------
+	
+	
+	
+4. 调用
+	1. 使用服务端的窄接口类
+	
+	如果客户端可以获取服务端的Web Service的窄接口类，这时可以使用XFire的
+	ObjectServiceFactory将对应地址的Web Service转换为窄接口实例进行调用	
+	
+	2. 使用WSDL文件构造客户端程序
+----------------------------------------------	
+		String wsdl = "com/baobaotao/xfire/client/BbtForumService.wsdl";①对应的WSDL文件
+		Resource resource = new ClassPathResource(wsdl);
+		Client client = new Client(resource.getInputStream(), null);②根据WSDL创建客户实例
+		③调用特定的Web Service方法
+		Object[] results = client.invoke("getRefinedTopicCount",new Object[]);
+		return (Integer) results[0];
+		
+----------------------------------------------
+	可以通过http://localhost:8080/baobaotao/service/BbtForumService?wsdl
+	地址获取BbtForumService对应的WSDL，并将其保存在工程项目的src对应的类包目录：
+	com/baobaotao/xfire/client /BbtForumService.wsdl。
+----------------------------------------------
+	
+	
+参考： http://blog.sina.com.cn/s/blog_4adc4b090101akzn.html
+	
+	
