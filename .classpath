@@ -132,5 +132,14 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/neethi-3.0.3.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/wsdl4j-1.6.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xmlschema-core-2.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ant-1.9.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ant-launcher-1.9.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/asm-5.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/cglib-3.2.5.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javassist-3.22.0-GA.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/log4j-api-2.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/log4j-core-2.3.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mybatis-3.4.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ognl-3.1.16.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
