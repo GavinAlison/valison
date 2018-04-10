@@ -44,7 +44,6 @@ public class DemoUtil {
 			Element el = root.element("红楼梦");
 			// System.out.print("element text: " + el.getTextTrim());
 			// 获取某节点下所有名为作者的子节点(不包括孙子节点), 并进行遍历，
-			// 根结点下没有<作者>节点，就找不到
 			System.out.println("=================");
 			List nodes = root.elements("作者");
 			for (Iterator it = nodes.iterator(); it.hasNext();) {
