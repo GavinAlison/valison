@@ -2,7 +2,6 @@ package com.alison.map;
 
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
 
 public class MapUtil {
 	// 遍历map

@@ -1,4 +1,4 @@
-package com.alison.base;
+package com.alison.base.type;
 
 import java.lang.reflect.ParameterizedType;
 

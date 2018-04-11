@@ -16,17 +16,15 @@ public class ArrayListUtil {
 		// indexoutOfBoundsException：index:2, size:1
 		// list.add(2, "asd");
 		// list.add(1,"asd")等效于elementData[2]="asd";
-		int i=0;
-		while(i<10){
+		int i = 0;
+		while (i < 10) {
 			list.add(i);
 		}
 		Object obj[] = new Object[list.size()];
 		list.toArray(obj);
 	}
-	
-	
-	
-	public void test02(){
-		
+
+	public void test02() {
+
 	}
 }
