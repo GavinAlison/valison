@@ -194,7 +194,6 @@ public class ParameterizedTypeDemo implements InterfaceCD {
 		ParameterizedType pType = (ParameterizedType) types[0];
 		// 返回所有者类型，打印结果是interface java.util.Map
 		System.out.println(pType.getOwnerType());
-		
 		// Map接口就是Map.Entry的所有者
 	}
 
