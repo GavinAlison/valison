@@ -3,6 +3,7 @@ package com.alison.base.jvm;
 public class OutOfMemeryErrorTest {
 	private void dontstop() {
 		while (true) {
+			OutOfMemeryErrorTest d = new OutOfMemeryErrorTest();
 		}
 	}
 

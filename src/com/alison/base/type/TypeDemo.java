@@ -77,7 +77,6 @@ public class TypeDemo<T> {
 		try {
 			d.method02(new ArrayList());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

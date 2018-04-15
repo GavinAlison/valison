@@ -72,13 +72,13 @@ public class FormDataServlet extends HttpServlet {
                     String value = Streams.asString(in);
                     if (TokenServlet.TOKEN_FIELD.equals(name)) {
                         token = value;
-                        /** TODO: validate your token. */
+                        /**  */
                     }
                     System.out.println(name + ":" + value);
                 } else {
                     if (token == null || token.trim().length() < 1)
                         token = req.getParameter(TokenServlet.TOKEN_FIELD);
-                    /** TODO: validate your token. */
+                    /**  */
 
                     // 这里不能保证token能有值
                     filename = item.getName();

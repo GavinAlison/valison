@@ -53,7 +53,7 @@ public class TokenServlet extends HttpServlet {
 			json.put("server", Configurations.getConfig("STREAM_CROSS_SERVER")+ File.separator);
 		} catch (JSONException e) {
 		}
-		/** TODO: save the token. */
+		/**  */
 		
 		writer.write(json.toString());
 	}

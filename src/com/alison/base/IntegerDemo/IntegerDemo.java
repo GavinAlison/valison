@@ -1,8 +1,6 @@
 package com.alison.base.IntegerDemo;
 
-import java.text.NumberFormat;
-
-import javax.xml.rpc.holders.IntHolder;
+import org.omg.CORBA.IntHolder;
 
 public class IntegerDemo {
 	public static void main(String[] args) {

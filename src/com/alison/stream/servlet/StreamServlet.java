@@ -46,7 +46,7 @@ public class StreamServlet extends HttpServlet {
 		final String fileName = req.getParameter(TokenServlet.FILE_NAME_FIELD);
 		final PrintWriter writer = resp.getWriter();
 
-		/** TODO: validate your token. */
+		/**   */
 
 		JSONObject json = new JSONObject();
 		long start = 0;
@@ -88,7 +88,7 @@ public class StreamServlet extends HttpServlet {
 		InputStream content = null;
 		final PrintWriter writer = resp.getWriter();
 
-		/** TODO: validate your token. */
+		/**   */
 
 		JSONObject json = new JSONObject();
 		long start = 0;
@@ -128,7 +128,7 @@ public class StreamServlet extends HttpServlet {
 				/** fix the `renameTo` bug */
 				// File dst = IoUtil.getFile(fileName);
 				// dst.delete();
-				// TODO: f.renameTo(dst);
+				//  
 				// 重命名在Windows平台下可能会失败，stackoverflow建议使用下面这句
 				try {
 					// 先删除

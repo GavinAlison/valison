@@ -11,7 +11,7 @@ import com.alison.webservice.service.impl.MyWebServiceImpl;
 
 // 用jax-ws开发的客户端会自动适应服务端的版本。
 public class ClientTest {
-	// TODO 待处理，出错了
+	// 待处理，出错了
 	public static void main(String[] args) {
 		try {
 			// ClientTest t = new ClientTest();

@@ -57,7 +57,6 @@ public class Student extends ListObject {
 
 	public Student() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Student(String name, int age) {

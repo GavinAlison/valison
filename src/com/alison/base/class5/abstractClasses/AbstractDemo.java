@@ -12,14 +12,15 @@ package com.alison.base.class5.abstractClasses;
  * 
  */
 public abstract class AbstractDemo {
-	private static AbstractDemo d;
+	private static AbstractDemo d = null;
 
 	public AbstractDemo() {
 
 	}
 
 	public static void main(String[] args) {
-		d = new AbstractDemo() {};
+		d = new AbstractDemo() {
+		};
 		d = new B();
 	}
 
