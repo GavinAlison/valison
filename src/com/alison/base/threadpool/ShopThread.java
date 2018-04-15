@@ -6,11 +6,11 @@ package com.alison.base.threadpool;
  * @author hy
  * 
  */
-public class Mythread2 extends Thread {
+public class ShopThread extends Thread {
 
 	private Product product;
 
-	public Mythread2(Product p) {
+	public ShopThread(Product p) {
 		product = p;
 	}
 
