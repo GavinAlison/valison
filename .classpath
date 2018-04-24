@@ -36,7 +36,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ezmorph-1.0.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-collections.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-beanutils.jar"/>
-	<classpathentry kind="lib" path="D:/workspace/valison/WebRoot/WEB-INF/lib/commons-codec.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/gwt-console-server-jbpm.war"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/gwt-console-jbpm.war"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-codec.jar"/>
