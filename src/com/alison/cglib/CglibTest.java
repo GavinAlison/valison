@@ -10,7 +10,6 @@ import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 import net.sf.cglib.proxy.NoOp;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 /**
