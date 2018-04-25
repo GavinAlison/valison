@@ -64,6 +64,7 @@ public class TypeDemo<T> {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		TypeDemo d = new TypeDemo();
 		// d.method1(new String("asd"));

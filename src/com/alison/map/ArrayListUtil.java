@@ -8,7 +8,7 @@ import org.junit.Test;
 public class ArrayListUtil {
 	@Test
 	public void test01() {
-		List list = new ArrayList();
+		List<Integer> list = new ArrayList<Integer>();
 		list.size();
 		// indexOutOfBoundsException
 		// list.get(0);

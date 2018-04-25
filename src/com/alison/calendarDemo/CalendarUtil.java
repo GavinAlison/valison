@@ -18,8 +18,8 @@ public class CalendarUtil {
 	}
 
 	// 获取当前月每天的日期
-	public List getDayListOfMonth() {
-		List list = new ArrayList();
+	public List<String> getDayListOfMonth() {
+		List<String> list = new ArrayList<String>();
 		Calendar cal = Calendar.getInstance(Locale.CHINA);
 		int year = cal.get(Calendar.YEAR);
 		int month = cal.get(Calendar.MONTH);

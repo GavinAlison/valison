@@ -59,6 +59,7 @@ public class CopyOfTest {
 	 *         returned array has type Object[], not the same type as a<br>
 	 *         返回的必须是Object[]的类型对象
 	 */
+	@SuppressWarnings("unchecked")
 	public static Object goodCopyOf(Object a, int newLength) {
 		Class cl = a.getClass();
 		if (!cl.isArray())
@@ -81,6 +82,7 @@ public class CopyOfTest {
 	 * 2. 每个对象都对应着一个Class对象，可以通过a.getClass()获得。而cl.getComponetType获得数组Class类型对象
 	 * 通过结果可以得到，cl.getCompnonetType().getName()的结果是数组的单个元素的类型
 	 */
+	@SuppressWarnings("unchecked")
 	public void method2() {
 		int[] a = new int[] { 1, 2, 3 };
 		Class cl = a.getClass();

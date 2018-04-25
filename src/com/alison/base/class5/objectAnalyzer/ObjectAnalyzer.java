@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * 
  */
 
+@SuppressWarnings("unchecked")
 public class ObjectAnalyzer {
 
 	private ArrayList<Object> visited = new ArrayList();

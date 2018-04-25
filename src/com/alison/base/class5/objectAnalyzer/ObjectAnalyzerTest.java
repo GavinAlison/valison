@@ -10,6 +10,7 @@ import java.util.ArrayList;
  * 
  */
 public class ObjectAnalyzerTest {
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		ArrayList<Integer> squares = new ArrayList();
 		for (int i = 0; i <= 5; i++) {

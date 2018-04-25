@@ -51,7 +51,7 @@ public class AxisClientHello {
 	 * <wsdl:definitions>元素的targetNamespace属性值。
 	 * 
 	 */
-	@SuppressWarnings("rawtypes")
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void getRPC() throws Exception {
 		RPCServiceClient serviceClient = new RPCServiceClient();
 		Options options = serviceClient.getOptions();

@@ -15,6 +15,7 @@ public class LogUtil {
 	 * 
 	 * 比如：在运行中，数据库连接中断，导致无法进行数据库操作， 属非用户操作不当，且不可预见的异常，这种事件应使用该级别
 	 */
+	@SuppressWarnings("unchecked")
 	public static void fatal(Class clazz, String info) {
 		// Log log = LogFactory.getLog(clazz);
 		Logger log = Logger.getLogger(clazz);
@@ -26,6 +27,7 @@ public class LogUtil {
 	 * 
 	 * 推荐：基本上用不到，比如：按照说明，在OTNMS中，系统管理整个不可用使用该级别才是正确的，而只有系统管理整个模块不可用几乎不可能
 	 */
+	@SuppressWarnings("unchecked")
 	public static void error(Class clazz, Exception ex) {
 		// Log log = LogFactory.getLog(clazz);
 		Logger log = Logger.getLogger(clazz);
@@ -39,6 +41,7 @@ public class LogUtil {
 		// log.error(HexTest.toHexString(buffer.toString()));
 	}
 
+	@SuppressWarnings("unchecked")
 	public static void error(Class clazz, String errMessage) {
 		// Log log = LogFactory.getLog(clazz);
 		Logger log = Logger.getLogger(clazz);
@@ -51,6 +54,7 @@ public class LogUtil {
 	 * 
 	 * 推荐：在抛出异常时使用该级别记录,或者用户输入非法数据导致系统不能走正常流程的事件
 	 */
+	@SuppressWarnings("unchecked")
 	public static void warn(Class clazz, Exception ex) {
 		// Log log = LogFactory.getLog(clazz);
 		Logger log = Logger.getLogger(clazz);
@@ -69,10 +73,12 @@ public class LogUtil {
 	 * 
 	 * 推荐：登陆，注销等，上传文件成功，失败等 用该级别记录
 	 */
+	@SuppressWarnings("unchecked")
 	public static void info(Class clazz, String info) {
 		info(clazz, info, "");
 	}
 
+	@SuppressWarnings("unchecked")
 	public static void info(Class clazz, String info, String reason) {
 		Log log = LogFactory.getLog(clazz);
 		// info = HexTest.toHexString(info);
@@ -86,6 +92,7 @@ public class LogUtil {
 	 * 
 	 * 推荐：这种级别的输出信息只为在开发过程中方便程序调试（linux下），开发完成后一律屏蔽掉
 	 */
+	@SuppressWarnings("unchecked")
 	public static void debug(Class clazz, String info) {
 		// Log log = LogFactory.getLog(clazz);
 		Logger log = Logger.getLogger(clazz);

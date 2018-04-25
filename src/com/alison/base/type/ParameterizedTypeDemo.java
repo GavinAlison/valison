@@ -138,6 +138,7 @@ public class ParameterizedTypeDemo implements InterfaceCD {
 		System.out.println(types);// class java.lang.Object
 	}
 
+	@SuppressWarnings("unchecked")
 	public static void typeTest() {
 		Type t1 = Integer.class;
 		System.out.println(t1);// class java.lang.Integer
@@ -174,6 +175,7 @@ public class ParameterizedTypeDemo implements InterfaceCD {
 	}
 
 	// getRawTy(), 返回最外层<>前面那个类型，即Map<K ,V>的Map
+	@SuppressWarnings("unchecked")
 	public void method07() {
 		Map<Integer, String> maps = new HashMap<Integer, String>();
 		ParameterizedType pType = (ParameterizedType) maps.getClass()

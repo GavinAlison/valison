@@ -19,6 +19,7 @@ public class ReflectTest {
 	 * 
 	 * @param args
 	 */
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		// read class name from command line args or user input
 		Scanner in = new Scanner(System.in);
@@ -51,6 +52,7 @@ public class ReflectTest {
 	 * 
 	 * @param clazz
 	 */
+	@SuppressWarnings("unchecked")
 	private static void printConstructors(Class clazz) {
 		System.out.println("-------------custructors------------");
 		Constructor[] constructors = clazz.getDeclaredConstructors();
@@ -79,6 +81,7 @@ public class ReflectTest {
 	 * 
 	 * @param clazz
 	 */
+	@SuppressWarnings("unchecked")
 	private static void printMethods(Class clazz) {
 		System.out.println("----------method-------------");
 		Method[] methods = clazz.getDeclaredMethods();
@@ -108,6 +111,7 @@ public class ReflectTest {
 	 * 
 	 * @param clazz
 	 */
+	@SuppressWarnings("unchecked")
 	private static void printFields(Class clazz) {
 		// clazz.get
 		System.out.println("---------fields-------------");

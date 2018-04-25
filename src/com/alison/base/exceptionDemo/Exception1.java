@@ -45,6 +45,7 @@ public class Exception1 {
 		Item.getInstance().length();
 	}
 
+	@SuppressWarnings("unchecked")
 	@Test
 	public void method5() throws Exception {
 		Exception1 e1 = null;

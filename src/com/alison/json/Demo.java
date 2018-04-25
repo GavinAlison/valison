@@ -16,7 +16,7 @@ public class Demo {
 	// 1.List集合转换成json代码 JSONArray
 	@Test
 	public void Method01() {
-		List list = new ArrayList();
+		List<String> list = new ArrayList<String>();
 		list.add("1");
 		list.add("asd");
 		JSONArray arr = JSONArray.fromObject(list);
@@ -24,6 +24,7 @@ public class Demo {
 	}
 
 	// 2.map集合转换层json代码 JSONObject
+	@SuppressWarnings("unchecked")
 	@Test
 	public void method02() {
 		Map map = new HashMap();
@@ -97,6 +98,7 @@ public class Demo {
 
 	// 出现JSONUtil.bean2Json()报has no read method. SKIPPED问题
 	// 解决方法
+	@SuppressWarnings("unchecked")
 	@Test
 	public void method07() {
 		List list = new ArrayList();
@@ -198,6 +200,7 @@ public class Demo {
 	}
 
 	// 10. list<Bean> 转换成json代码 JSONArray
+	@SuppressWarnings("unchecked")
 	@Test
 	public void method10() {
 		Student stu1 = new Student("json", 24);

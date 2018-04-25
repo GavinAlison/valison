@@ -3,6 +3,7 @@ package com.alison.base.annotation;
 import java.lang.reflect.Method;
 
 public class AnnotationTest {
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		try {
 			// 使用类加载器加载类
