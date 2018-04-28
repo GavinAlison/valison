@@ -1,4 +1,7 @@
 /WebRoot/WEB-INF/classes/
 .myumldata
 .settings/
-.class
+*.class
+.myeclipse/
+.mymetadata
+.project
