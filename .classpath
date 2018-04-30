@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_45"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload-1.3.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-2.5.jar"/>
@@ -112,7 +111,7 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-pool-1.6-bin.zip"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjweaver.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjrt.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjtools.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aspectjtools.jar" sourcepath="C:/Users/hy/.m2/repository/org/aspectj/aspectjtools/1.8.13/aspectjtools-1.8.13-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-4.12.jar" sourcepath="C:/Users/hy/.m2/repository/junit/junit/4.12/junit-4.12-sources.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/junit-theories-5.0-alpha-3.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.aspectj.matcher.jar"/>
@@ -139,5 +138,8 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/ognl-3.1.16.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/hamcrest-all-1.3.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xom-1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/zxing-3.3.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/fastjson-1.2.20.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_80"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
